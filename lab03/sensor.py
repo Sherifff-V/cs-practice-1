@@ -9,4 +9,14 @@ k_er = 0
 for i in range(zapis):
     gradus = input()
 
-    
+    if gradus == 'error': k_er += 1
+
+    else:
+        gradus = float(gradus)
+        g_sr += gradus
+        if gradus > porog: k += 1
+        if g_max < gradus: g_max = gradus
+
+print(zapis)
+print(k_er)
+print(k)
