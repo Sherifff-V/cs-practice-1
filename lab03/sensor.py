@@ -20,3 +20,5 @@ for i in range(zapis):
 print(zapis)
 print(k_er)
 print(k)
+print(round(g_max, 1))
+print(round(g_sr / (zapis - k_er), 1))
