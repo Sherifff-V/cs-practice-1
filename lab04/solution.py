@@ -12,3 +12,20 @@ def average(scores: list[float]) -> float:
         return round(l_sum / len(scores), 2)
     else: return None
 
+def ranking(names: list[str], scores: list[float]) -> list[str]:
+    names_temp = names[:]
+    scores_temp = scores[:]
+    ans = []
+
+    while scores_temp:
+        max_i = 0
+        for i in range(1, len(scores_temp)):
+            if scores_temp[i] > scores_temp[max_i]:
+                max_i = i
+        ans.append(names_temp[max_i])
+        names_temp.pop(max_i)
+        scores_temp.pop(max_i)
+
+    return ans
+
+
