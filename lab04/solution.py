@@ -10,7 +10,7 @@ def average(scores: list[float]) -> float:
     l_sum = sum(scores)
     if len(scores) > 0:
         return round(l_sum / len(scores), 2)
-    else: return None
+    else: return 0.0
 
 def ranking(names: list[str], scores: list[float]) -> list[str]:
     names_temp = names[:]
