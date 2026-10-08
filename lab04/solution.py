@@ -28,4 +28,9 @@ def ranking(names: list[str], scores: list[float]) -> list[str]:
 
     return ans
 
-
+def above_average(names: list[str], scores: list[float]) -> list[str]:
+    ans = []
+    for i in range(len(names)):
+        if scores[i] > average(scores):
+            ans.append(names[i])
+    return ans
