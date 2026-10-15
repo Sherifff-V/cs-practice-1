@@ -19,7 +19,7 @@ def ranking(names: list[str], scores: list[float]) -> list[str]:
 
     while scores_temp:
         max_i = 0
-        for i in range(1, len(scores_temp)):
+        for i in range(len(scores_temp)):
             if scores_temp[i] > scores_temp[max_i]:
                 max_i = i
         ans.append(names_temp[max_i])
